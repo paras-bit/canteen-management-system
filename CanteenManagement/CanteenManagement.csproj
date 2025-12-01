@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AFFCBFC4-0861-4489-8918-1493EC2693D1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CanteenManagement</RootNamespace>
+    <AssemblyName>CanteenManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminFrm.Designer.cs">
+      <DependentUpon>AdminFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BillFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillFrm.Designer.cs">
+      <DependentUpon>BillFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoryFrm.Designer.cs">
+      <DependentUpon>CategoryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerFrm.Designer.cs">
+      <DependentUpon>CustomerFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard.Designer.cs">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFrm.Designer.cs">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFrm.Designer.cs">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemsFrm.Designer.cs">
+      <DependentUpon>ItemsFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseFrm.Designer.cs">
+      <DependentUpon>PurchaseFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportAdmin.Designer.cs">
+      <DependentUpon>ReportAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\PrintInvoiceFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\PrintInvoiceFrm.Designer.cs">
+      <DependentUpon>PrintInvoiceFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splash.Designer.cs">
+      <DependentUpon>splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffFrm.Designer.cs">
+      <DependentUpon>StaffFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockFrm.Designer.cs">
+      <DependentUpon>StockFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupplierFrm.Designer.cs">
+      <DependentUpon>SupplierFrm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminFrm.resx">
+      <DependentUpon>AdminFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillFrm.resx">
+      <DependentUpon>BillFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoryFrm.resx">
+      <DependentUpon>CategoryFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerFrm.resx">
+      <DependentUpon>CustomerFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFrm.resx">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFrm.resx">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemsFrm.resx">
+      <DependentUpon>ItemsFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PurchaseFrm.resx">
+      <DependentUpon>PurchaseFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportAdmin.resx">
+      <DependentUpon>ReportAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\PrintInvoiceFrm.resx">
+      <DependentUpon>PrintInvoiceFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Report1.rdlc" />
+    <EmbeddedResource Include="splash.resx">
+      <DependentUpon>splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffFrm.resx">
+      <DependentUpon>StaffFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockFrm.resx">
+      <DependentUpon>StockFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupplierFrm.resx">
+      <DependentUpon>SupplierFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Report\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="resources\bill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\Category.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\items.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\main.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CanteenDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CanteenDB_log.ldf">
+      <DependentUpon>CanteenDB.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="resources\supplier.ico" />
+    <None Include="resources\Admin.png" />
+    <None Include="resources\17276172868901.png" />
+    <None Include="resources\17276174650281.jpg" />
+    <None Include="resources\17276172726401.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
